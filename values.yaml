@@ -59,10 +59,10 @@ ingress:
         backend:
           serviceName: helloworld-service
           servicePort: 8005
-  tls:
-   - secretName: ingress-helloworld-tls
-     hosts:
-       - "testapp.k8s.dev.one2cloud.co"
+  # tls:
+  #  - secretName: ingress-helloworld-tls
+  #    hosts:
+  #      - "testapp.k8s.dev.one2cloud.co"
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
