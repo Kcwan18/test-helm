@@ -53,7 +53,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: hello.k8s.dev.one2.cloud
+    - host: testapp.k8s.dev.one2cloud.co
       paths:
       - path: /
         backend:
@@ -62,7 +62,7 @@ ingress:
   tls:
    - secretName: ingress-helloworld-tls
      hosts:
-       - "hello.k8s.dev.one2.cloud"
+       - "testapp.k8s.dev.one2cloud.co"
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
