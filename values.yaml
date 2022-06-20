@@ -3,7 +3,7 @@ namespace: hello-world
 image:
   repository: kcwan18/test-app
   pullPolicy: Always
-  tag: sha256:21c54c1358cd75f037f88e0a893c6b9cc294bedf7ad7492b67df51434baceed8
+  tag: sha256:1caa2c8e192c9988d44202da2a51300fd31ca59ba14c702b823aac618155577c
 container:
   port: 8080
 imagePullSecrets: []
