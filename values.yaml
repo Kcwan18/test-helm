@@ -24,7 +24,7 @@ ingress:
   enabled: true
   annotations: null
   hosts:
-    - host: testapp2.k8s.dev.one2cloud.co
+    - host: testapp2.k8s.dedrive.io
       paths:
         - path: /
           backend:
