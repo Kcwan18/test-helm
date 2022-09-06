@@ -3,7 +3,7 @@ namespace: hello-world
 image:
   repository: kcwan18/test-app
   pullPolicy: Always
-  tag: sha256:1caa2c8e192c9988d44202da2a51300fd31ca59ba14c702b823aac618155577c
+  tag: sha256:40548a7186129200e8ea2c7105a7f8e2f29ea325b20bd6a0a34ff07bb9a3c31f
 container:
   port: 8080
 imagePullSecrets: []
@@ -22,8 +22,7 @@ service:
   port: 80
 ingress:
   enabled: true
-  annotations: 
-    kubernetes.io/ingress.class: nginx
+  annotations: null
   hosts:
     - host: testapp2.k8s.dedrive.io
       paths:
