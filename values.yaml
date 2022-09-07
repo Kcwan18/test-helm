@@ -21,16 +21,16 @@ service:
   type: ClusterIP
   port: 80
 ingress:
-  enabled: true
-  annotations:
-    kubernetes.io/ingress.class: nginx
-  hosts:
-    - host: testapp2.k8s.dedrive.io
-      paths:
-        - path: /
-          backend:
-            serviceName: helloworld-service
-            servicePort: 8005
+  enabled: flase
+  # annotations:
+  #   kubernetes.io/ingress.class: nginx
+  # hosts:
+  #   - host: testapp2.k8s.dedrive.io
+  #     paths:
+  #       - path: /
+  #         backend:
+  #           serviceName: helloworld-service
+  #           servicePort: 8005
 resources: {}
 autoscaling:
   enabled: false
